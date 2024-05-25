@@ -1,0 +1,273 @@
+<html lang="ja">
+<head>
+    <title>Радиальная(Лепестковая) диаграмма параметров сотрудника</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="Style1.min.css"/>
+    <link rel="stylesheet" href="Style2.min.css"/>
+    <link rel="stylesheet" href="Style3.min.css">
+
+    <script data-ad-client="ca-pub-2969724259746506" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+            <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#2F4F4F"
+                    }
+                },
+                "content": {
+                    "message": "This site uses cookies to improve the site and advertising. By using the site, you agree to the use of cookies. ",
+                    "dismiss": "Got it!",
+                    "link": "See more"
+                }
+            })
+        });
+    </script>
+            <!-- google_analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-72113204-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+        
+    
+    
+        
+            
+            
+        
+    
+</head>
+
+<body>
+<div class="col-sm-12">
+    <div class="center-block container">
+            <h1 class="col-sm-12">Радиальная карта сотрудника</h1>
+        <nav>
+        
+    </nav>
+    <p class="col-sm-12 alrt alert-info mt10 p5">
+        Выберите параметры и создайте по ним свою диаграмму для удобного анализа своих характеристик.     </p>
+    
+    <aside class="col-sm-6 form-inline">
+
+        <fieldset class="col-sm-12 form-group">
+            <input type="text" value="название диаграммы" class="title form-control" size="20">
+        </fieldset>
+
+        <ul class="col-sm-12 form-group items-field">
+                            <li>
+                    <input type="text" value="название параметра" class="string form-control"
+                           size="20">
+                    <input type="text" value="8" class="number form-control" size="4">
+                    <button class="btn btn-danger delete-item">Удалить</button>
+                </li>
+                            <li>
+                    <input type="text" value="название параметра" class="string form-control"
+                           size="20">
+                    <input type="text" value="8" class="number form-control" size="4">
+                    <button class="btn btn-danger delete-item">Удалить</button>
+                </li>
+                            <li>
+                    <input type="text" value="название параметра" class="string form-control"
+                           size="20">
+                    <input type="text" value="8" class="number form-control" size="4">
+                    <button class="btn btn-danger delete-item">Удалить</button>
+                </li>
+                            <li>
+                    <input type="text" value="название параметра" class="string form-control"
+                           size="20">
+                    <input type="text" value="8" class="number form-control" size="4">
+                    <button class="btn btn-danger delete-item">Удалить</button>
+                </li>
+                            <li>
+                    <input type="text" value="название параметра" class="string form-control"
+                           size="20">
+                    <input type="text" value="8" class="number form-control" size="4">
+                    <button class="btn btn-danger delete-item">Удалить</button>
+                </li>
+                    </ul>
+
+        <fieldset class="col-sm-12 form-group">
+            <label class="label-max-scale form-control">Max</label>
+            <input type="text" value="10" class="number max-scale form-control" size="4">
+            <button class="btn btn-primary add-item">Добавить</button>
+        </fieldset>
+
+                    <fieldset class="col-sm-12 form-group">
+                <label>Размер:</label>
+                <input type="range" class="chart_size" value="290" min="290" max="540">
+            </fieldset>
+        
+        <a href="" class="col-sm-12 btn btn-success" id="chart_image_submit" download="chart">
+            Создать и скачать изображение графика       </a>
+
+    </aside>
+        <main class="col-sm-6">
+                <div class="chart-container">
+            <canvas id="radar_chart"></canvas>
+        </div>
+                        
+        
+            </main>
+
+    <div class="col-sm-12">
+                        
+        
+        
+        
+        
+    
+                <h2> Для чего вам использовать данный инструмент? </h2>
+Чтобы создать графическую карту своих характеристик и сравнить их друг с другом, а также - сравнить по одинаковым показателям свою карту с картами других сотрудников.
+
+<h2> Преимущества радиальной диаграммы </h2>
+<Ul>
+<li> Наглядность </li>
+<li> Возможность сравнения сотрудников по разным параметрам</li>
+<li> Простая и понятная интерпритация </li>
+</ul>
+
+
+<h2> Обзор радиальной карты </h2>
+
+<article>
+Радарная диаграмма - это тип графика, который используется для сравнения различных показателей. С его помощью можно легко визуализировать набор характеристик для наглядного сравнения.
+</article>            
+        
+        
+        
+        
+    
+    </div>
+        <footer class="col-sm-12">&copy;2024 AdaptQuest</footer>
+
+  
+<script src="https://chachart.net/js/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+    
+
+    <script>
+
+        $(function () {
+
+            drawChart();
+
+            $('.add-item').on('click', function () {
+                var $li = $('.items-field li:last').clone(true, true);
+                $li.find('.string').val('item');
+                $('.items-field').append($li);
+                drawChart();
+            });
+
+            $('.delete-item').on('click', function () {
+                if ($('.items-field li').length > 1) {
+                    $(this).parent('li').remove();
+                }
+                drawChart();
+            });
+
+            $('input').on('change', function () {
+                drawChart();
+            });
+        });
+
+        function drawChart() {
+
+            var labels = [];
+            var data = [];
+
+            $('.items-field li').each(function () {
+                labels.push($(this).find('.string').val());
+                data.push(parseInt($(this).find('.number').val()));
+            });
+
+            var color = Chart.helpers.color;
+            var config = {
+                chartArea: {
+                    backgroundColor: 'rgba(230,238,255, 0.6)'
+                },
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: $('.title').val(),
+                        backgroundColor: color('rgb(255, 99, 132)').alpha(0.5).rgbString(),
+                        borderColor: color('rgb(255, 99, 132)').alpha(0.5).rgbString(),
+                        pointBackgroundColor: color('rgb(255, 99, 132)').alpha(0.5).rgbString(),
+                        data: data,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    animation: false,
+                    showTooltips: false,
+                    showLabelBackdrop: false,
+                    legend: {position: 'top'},
+                    scale: {
+                        ticks: {
+                            min: 0,
+                            max: $('.max-scale').val(),
+                        }
+                    },
+                    layout: {
+                        padding: {
+                            left: 0,
+                            right: 0,
+                            top: 10,
+                            bottom: 0
+                        }
+                    },
+                },
+
+            };
+
+            var chart;
+            chart = document.getElementById("radar_chart");
+            chart.style.backgroundColor = "rgba(255, 255, 255, 1)";
+            ctx = chart.getContext("2d");
+
+            var chartSize = parseInt($('.chart_size').val());
+            ctx.canvas.height = chartSize;
+            ctx.canvas.width = chartSize;
+
+            $('.chart-container').width(chartSize);
+            $('.chart-container').height(chartSize);
+
+            var radarChart = new Chart(ctx, config);
+            document.getElementById('chart_image_submit').href = radarChart.toBase64Image();
+            radarChart.update();
+
+        }
+
+
+    </script>
+
+    </div>
+</div>
+</body>
+</html>
